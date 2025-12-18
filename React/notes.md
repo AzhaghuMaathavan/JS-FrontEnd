@@ -156,9 +156,9 @@ Eg: Let (count, setCount) = useState(0)
 It Returns 2 elements one is the current state value and another is a function to update that state value.
 
 UnControled Components: 
-* They are not managed by React but they are managed by the DOM itself.
+They are not managed by React but they are managed by the DOM itself.
                                 OR
-*They are components that do not relay on React state and handled by the DOM.
+They are components that do not rely on React state and are handled by the DOM.
  In order to access any value that has been entered in the input field we use refs keywords.
 
 eg : function uncontrolled(){
