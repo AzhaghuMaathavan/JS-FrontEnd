@@ -23,3 +23,22 @@ DisplayData.propTypes = {
 };
 
 export default DisplayData;
+
+
+/*App.js
+import React from 'react';
+import DisplayData from './components/DisplayData';
+
+function App() {
+  const staticData = "Hello, I am static data!";
+  const dynamicData = new Date().toLocaleString();
+
+  return (
+    <div>
+      <h1>Props Demo</h1>
+      <DisplayData staticData={staticData} dynamicData={dynamicData} />
+    </div>
+  );
+}
+
+export default App; */
