@@ -1,4 +1,3 @@
-/*
 
 React JS : It is a JS frontend component which is used to develop attractive user interface for web applications.
 It is developed by Jordan Walke, a software engineer working at Facebook.
@@ -169,4 +168,77 @@ eg : function uncontrolled(){
 Controlled Components : 
 They are the components whose state and behaviors are managed by React components using states.
 
-*/
+useEffect:
+
+The useEffect hook in React.JS allows you to perform side effect like fetching directly uploading to DOM in Functional Component.
+
+* Directly Updating the DOM Document and window
+* Fetching Data from API
+* Timer like setInterval , setTimeout
+
+
+It Accespts 2 Arguments [ 1. Call Back 2.Dependency]
+
+1. Without Dependency :
+
+The useEffect is going to run for the infinite or everysecond
+
+EG :
+import React, { useEffect , useState } from 'react
+
+function Counter(){
+    let[count,setcount]=useState(0)
+    useEffect(()=>{
+        setcount(count+)
+    })
+
+    return ( 
+        <div>
+            <h1>{count} Component mounted <h1/>
+        </div>
+    )
+}
+
+export default Counter
+
+2. With Empty Array
+useEffect is Going to render only One Time.
+
+EG :
+import React, { useEffect , useState } from 'react
+
+function Counter(){
+    let[count,setcount]=useState(0)
+    useEffect(()=>{
+        setTimeout(()=>{
+            setcount{count+1}
+        },1000)
+    },[])
+
+    return ( 
+        <div>
+            <h1>{count} Component mounted <h1/>
+        </div>
+    )
+}
+
+3. Dependency with Variable :
+
+EG :
+import React, { useEffect , useState } from 'react
+
+function Counter(){
+    let[count,setcount]=useState(0)
+    useEffect(()=>{
+        setInterval(()=>{
+            setcount{count+1}
+        },1000)
+    },[count])
+
+    return ( 
+        <div>
+            <h1>{count} Component mounted <h1/>
+        </div>
+    )
+}
+

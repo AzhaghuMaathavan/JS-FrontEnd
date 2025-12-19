@@ -12,7 +12,8 @@ let e =toString('abc')
 console.log(`${a} is not ${b}`)
 */
 
-function isPrime(n) {
+/* 
+    function isPrime(n) {
     if (typeof n !== 'number' || !Number.isInteger(n)) return false;
     if (n <= 1) return false;
     if (n <= 3) return true; 
@@ -29,3 +30,6 @@ for (let i = 1; i <= n; i++) {
         console.log(i);
     }
 }
+*/
+
+

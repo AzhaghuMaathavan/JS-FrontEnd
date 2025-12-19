@@ -16,7 +16,7 @@ export default class Test extends Component {
 Test.propTypes={
     name:PropTypes.string.isRequired
 } */
-
+/* State Example
 import React, { useState } from 'react'
 function Test(){
     let [user,setuser]=useState({name:'John',age:30})
@@ -41,3 +41,26 @@ function Test(){
 }
 
 export default Test
+*/
+
+/* OnChange Example
+import React , { Component } from 'react'
+
+export default class Test extends Component {
+    state={
+        name:''
+    }
+    handleClick=e=>{
+        this.setState({name:e.target.value})
+    }
+    render(){
+        return (
+            <>
+            <h1>Hello</h1>
+            <input type="text" name="id" onChange={this.handleClick} />
+            <p>Content: {this.state.name}</p>
+            </>
+        )
+    }
+}   
+*/
