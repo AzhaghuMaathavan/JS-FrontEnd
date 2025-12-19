@@ -2,13 +2,16 @@ import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import LifeCycleEg from './component/LifeCycleEg';
+import AppContext from './component/AppContext';
+import Footer from './component/Footer';
 
 
 function App() {
   return (
     <div>
-      <LifeCycleEg />
+      <AppContext>
+        <Footer />
+      </AppContext>
     </div>
   );
 }
