@@ -29,3 +29,26 @@ class Timer extends Component {
 }
 
 export default Timer;
+
+
+/*
+import React, { useState, useEffect } from 'react';
+
+function Timer() {[]
+  const [count,setcount]=useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setcount(prev->prev+1)
+    },1000)
+    return () => {
+      clearInterval(timer);
+    }
+  },[count])
+  return (
+    <div>
+      <h2>Elapsed time: {count} seconds</h2>
+    </div>
+  )
+}
+export default Timer;
+*/

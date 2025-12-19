@@ -242,3 +242,49 @@ function Counter(){
     )
 }
 
+LifeCycle :
+
+It refers to the series of stages a component goes through from the moment it is created until it is removed from the application.You can thing of it as the "birth, growth, and death" of a component.
+
+
+2.Lifecycle of React Component 
+Mounting : Component is created and added to DOM , i.e: First time display on screen
+
+Updating : Did Mount or updating due to change in comp [component] by state or props.
+
+Unmounting : Component is removed from DOM.
+
+Note : 
+The cleanup function : It only runs when the cmponent unmounts.
+
+If the component is always present in the UI, it never unmounts so it will not be triggered.
+
+If the component never gets removed from the DOM, the cleanup function will never execute.
+
+Prop Drilling :
+It is used to pass data from parent component to child component and from child component to grand child component.
+
+
+
+Use Context Hook :
+* It is used to get the context value sent by the provider 
+
+* It accepts one argument that is context.
+
+* It returns value sent by the provider 
+
+* It helps to share data like userinfo between components without passing it manually at every level.
+
+* It allows components to directly access shared data provided by a context.
+
+* Use context hook is used to manage global data in React Application.
+
+Context API : 
+It is a built-in React feature used to share data across many components without having to pass props manually through every level of the component tree. It provides a way to have a "Global State" for your app.
+
+
+Steps to use Context :
+
+1. createContext()
+2. Provider : Brodcasts the data
+3. useContext() : The hook used by child components to receive the data.
