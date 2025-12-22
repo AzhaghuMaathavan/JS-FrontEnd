@@ -244,7 +244,7 @@ function Counter(){
 
 LifeCycle :
 
-It refers to the series of stages a component goes through from the moment it is created until it is removed from the application.You can thing of it as the "birth, growth, and death" of a component.
+It refers to the series of stages a component goes through from the moment it is created until it is removed from the application.You can think of it as the "birth, growth, and death" of a component.
 
 
 2.Lifecycle of React Component 
@@ -267,11 +267,12 @@ It is used to pass data from parent component to child component and from child 
 
 
 Use Context Hook :
+
 * It is used to get the context value sent by the provider 
 
 * It accepts one argument that is context.
 
-* It returns value sent by the provider 
+* It returns value sent by the provider
 
 * It helps to share data like userinfo between components without passing it manually at every level.
 
@@ -282,9 +283,34 @@ Use Context Hook :
 Context API : 
 It is a built-in React feature used to share data across many components without having to pass props manually through every level of the component tree. It provides a way to have a "Global State" for your app.
 
+Eg :
+
 
 Steps to use Context :
 
 1. createContext()
 2. Provider : Brodcasts the data
 3. useContext() : The hook used by child components to receive the data.
+
+
+Custom Hooks in React :
+
+Definition : 
+Custom Hook in JavaScript function whose name starts with "use" and that may call other hooks. It is a mechanism to extract component logic into reusable functions, allowing you to share stateful logic across multiple components without changing your component hierarchy .
+
+Explanation :
+
+In React , we often find ourselves writing the same logic ( like fetching data , handling a form , or checking online status) in many different components . Instead of Copy-Pasting that code , we wrap it in a Custom Hook.
+
+
+//.....................//
+
+Definition :
+useReducer is a React Hook used for state management . It is a alternative to useState. It is usually preferred when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. 
+
+
+1.State
+Definition : The "Source of Truth" for your component . It represents the current data or values at any given moment.
+
+In your project : In an Expense Tracker , the State is the arrary of expense objects (eg:[{product: "Bread" , price: 20}])
+
