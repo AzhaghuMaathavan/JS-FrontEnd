@@ -314,3 +314,136 @@ Definition : The "Source of Truth" for your component . It represents the curren
 
 In your project : In an Expense Tracker , the State is the arrary of expense objects (eg:[{product: "Bread" , price: 20}])
 
+###### Context Api.
+
+  The Context Api is a built-in React feature used to shared data (state) across many components without having to pass props manually through every level of the component tree. It provides a way to have a "Global state" for your age.
+
+
+
+###### Use context hook.
+
+
+
+•⁠  ⁠use context hook is used to get the context value sent by the provider.
+•⁠  ⁠it accepts one argument that is context.
+•⁠  ⁠it return value sent by the provider.
+•⁠  ⁠it helps to share data like user info between components without passing it manually at every level.
+•⁠  ⁠it allow component to directly access shared data provided by a context.
+
+
+
+###### steps to use the usecontext
+
+&nbsp; createcontext(): creates
+
+&nbsp; Provider:the component that "broadcasts" the data
+
+&nbsp; usecontext(): the hook used by child components to "receive" the data.
+
+
+
+###### custom hooks in React
+
+###### 1.Definition
+
+&nbsp; 
+
+&nbsp; A custom hook is a javascript function whose name start with 'use' and that may call other hooks. It is a mechanish to extract component logic into reusable functions, allowing you to share stateful logic across multiple components without changing your component hierarchy.
+
+
+
+###### 2.Explanation
+
+
+
+&nbsp; In React, we often find ourselves writing the same logic(like fetching data, handling a form, or checking online status) in many different components. Instead of "Copy-Pasting" that code, we wrap it in a custom Hook.
+
+
+
+###### useReducer Definition
+
+&nbsp; useReducer is a React Hook used for state management. It is an alternative to useState. It is usually preferred when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.
+
+##### State
+&nbsp; Definition:The "Source of truth" for your component. It represents the current data or values at any given moment.
+
+In your project: In an expense tracker, the state is the array of expense objects (e.g.,[{product:"Soap",amount: 10}]).
+
+##### Action
+Definition: A plane js object that acts as an "instruction manual" for what change should happen.
+
+E.g.,{type: 'ADD_EXPENSE',payload:{name:'Milk',price:S}}.
+
+##### Dispatch
+Definition: a function that "triggers" or "sends" the action to the Reducer.
+
+Syntax: dispatch({ type: 'DELETE_TASK', payload: id }).
+
+##### Reducer
+Definition: A pure js function that takes the Current State and the Action as arguments and returns the New State.
+
+##### React Router
+  React router is a library that provides routing capabilities for React applications.
+
+  Routing means handling navigation between different views.
+
+  React Router is the standard routing library for React applications. It enables you to:
+   -create multiple pages in your single-page aaplication
+   -Handle URL parameters and query strings
+   -Manage browser history and navigatin
+   -create nested routes and layouts
+   -Implement protected routes for authentication
+
+   Without a Router, your React application would be limited to a single page with no way to navigation between differnt views.
+
+#### Installation: 
+npm install react-router-dom
+
+#### BrowserRouter : 
+The parent component that 
+
+####             context                                                prop-drilling
+      
+    It can share data globally                                     it can share to shallow hierarchy
+
+    Re-rendring is less                                            Re-rendering is more
+
+
+
+#### React-script command
+
+#### Development level
+ *npm start
+ *npm run dev
+ *npm run test
+ *npm run lint
+
+#### Production level
+ *npm run build
+ *npm run serve
+ *npm run eject
+
+#### NPM
+
+ Install package globally or locally
+ Installed package to be used later
+ Bundeled with Node.js
+ Manage present dependencies
+ Node package manager 
+ Eg.NPM create vite@latest
+
+#### NPX
+
+Execute package without installing
+Execute package
+Bundeled with NPM
+Focus on running
+Node package execution
+Eg.NPX create react-app
+
+#### HOC(higher order component)
+
+component which accepts another comp as argument and return that component is called as higher order comp
+
+Note:HOC will always return new copm
+ & we can create multiple child comp.
