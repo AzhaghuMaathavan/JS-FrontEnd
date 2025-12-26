@@ -447,3 +447,20 @@ component which accepts another comp as argument and return that component is ca
 
 Note:HOC will always return new copm
  & we can create multiple child comp.
+
+
+
+ API Integration 
+
+ 1. Definition : API Integration invloves making HTTP requests ( using the REST or GraphQL protocol)
+ from the browser to a server. In React, this is typically handled within Lifecycle methods ( for class components) or Hooks like useEffect ( for functional components).
+
+ 2. Usage :
+ Data Fetching : Retriving information ( like user profiles or product lists ) to display on the UI.
+
+
+ Form Submission : Sending user-entered data (like a signup Form) to a database.
+
+ Authentication : Sending credentials to a server to recieve a login token
+
+ Real-time updates : Patching or deleting existing records in a database.

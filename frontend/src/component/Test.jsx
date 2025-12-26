@@ -64,3 +64,39 @@ export default class Test extends Component {
     }
 }   
 */
+
+import React, { useState } from 'react';
+
+function Test() {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const datafetch = async () => {
+    try {
+      setLoading(true);
+      let api = 'https://api.github.com/users';
+      await fetch(api);
+    } catch (err) {
+      setError('Error Occurred');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
+
+  if (error) {
+    return <h1>{error}</h1>;
+  }
+
+  return (
+    <div>
+      <h1>Test Component</h1>
+      <button onClick={datafetch}>Fetch</button>
+    </div>
+  );
+}
+
+export default Test;
