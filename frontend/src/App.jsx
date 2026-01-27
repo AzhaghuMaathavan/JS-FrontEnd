@@ -1,15 +1,16 @@
-import React from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Provider } from 'react-redux';
+import { Store } from './Redux/Store';
+import Counter from './Redux/Counter';
 import './App.css'
-import Test from './component/Test';
-
 
 function App() {
   return (
-    <div>
-      <Test/>
-    </div>
+    <Provider store={Store}>
+      <div className="App">
+        <h1>Redux Counter App</h1>
+        <Counter />
+      </div>
+    </Provider>
   )
 }
 

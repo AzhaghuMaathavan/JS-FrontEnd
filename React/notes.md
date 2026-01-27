@@ -464,3 +464,88 @@ Note:HOC will always return new copm
  Authentication : Sending credentials to a server to recieve a login token
 
  Real-time updates : Patching or deleting existing records in a database.
+
+
+Frontend + Backend
+
+Commands
+ npm i json-server@0.17.4
+
+ npx json-server --watch db.json -p 3005
+
+
+ Redux :
+
+ 1.What is Redux ?
+
+ Redux is a state management library for JavaScript apps ( mostly React ) that stores your app's data in one centralized place called store .
+
+ 2. Store 
+
+ The store holds the entire application state in one JavaScript Object 
+
+ It also :
+
+ Lets you read the state 
+
+ Lets you dispatch actions 
+
+ Runs reduce to update the state 
+
+ Notifies UI when the state changes
+
+ 3. State :
+
+ State is the data inside the Redux store .
+ Example idea (not code ) : user info , theme , products , cart , etc....
+
+ State is :
+
+ Read-only
+
+
+
+
+
+
+
+
+
+ 4. Action 
+
+ An Action is a plain JavaScript object that describes what ahppened in the app.'
+
+ It must have a type field (a striong describing the action).
+ It may also have extra data ( called payload )
+
+ Actions do not change the state themselves - They just describe them.
+
+ 5. Reducer 
+
+ A Reducer is a pure function that receives the current state and an action and returns a new state .
+
+ Key points :
+
+ Pure function ( no side effects )
+
+ Must not modify the existing state directly.
+
+ Returns a brand-new state object.
+
+6. Dispatch
+
+Dispatch is the way you send an action to the store .
+
+when you dispatch an action : 
+
+The store recieves it 
+
+The reducer runs 
+
+State gets updated 
+
+UI re-renders
+
+Installation : 
+
+npm install redux
